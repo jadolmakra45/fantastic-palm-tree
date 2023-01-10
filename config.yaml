@@ -1,0 +1,15 @@
+proxies:
+
+  - name: hurricane6.nextvpn.cc
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: ffa3ee6e-9ee4-46ab-9965-f3581a36c5b1
+    skip-cert-verify: true
+    sni: hurricane6.nextvpn.cc
+    network: ws
+    ws-opts:
+      path: /vpnneo
+      headers:
+        Host: hurricane6.nextvpn.cc
+    udp: true
