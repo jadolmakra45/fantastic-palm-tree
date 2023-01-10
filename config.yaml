@@ -1,5 +1,36 @@
 proxies:
 
+  - name: sgt1.sshocean.net
+    server: 141.193.213.21
+    port: 443
+    type: trojan
+    password: 2710c506-c1e0-41c2-b347-5cf9b632bc09
+    skip-cert-verify: true
+    sni: sgt1.sshocean.net
+    network: ws
+    ws-opts:
+      path: /websocket
+      headers:
+        Host: sgt1.sshocean.net
+    udp: true
+
+  - name: biznet8.nextvpn.cc
+    server: 141.193.213.21
+    port: 80
+    type: vmess
+    uuid: ecf9aaba-8ee4-4f7f-9fe1-1c3d8e3efd0c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: biznet8.nextvpn.cc
+    network: ws
+    ws-opts:
+      path: /vpnneo
+      headers:
+        Host: biznet8.nextvpn.cc
+    udp: true
+
   - name: hurricane6.nextvpn.cc
     server: 172.67.199.34
     port: 443
